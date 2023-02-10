@@ -1,0 +1,329 @@
+*{font-family: 'Inter';
+    font-style: normal;
+    font-weight:400;
+    font-size: 20px;
+    line-height: 30px;
+}
+.topnav {
+ margin: 0%;
+overflow: hidden;
+ background-color: #288282;
+
+}.nav_logo{
+position: relative;
+top: 15px;
+justify-content: center;
+  color: #288282;
+  border-radius: 360px;
+  float: left;
+ padding-top: -10px;
+ align-items: center;
+ display: flex;
+ /* second method*/
+
+ 
+ }.name_logo{
+
+  color:white;
+  border-radius: 360px;
+  background-color: #288282;
+ 
+}
+.topnav a {
+  float: left;
+  display: flex;
+  color:white;
+  height: 80px;
+ 
+ text-decoration: none;
+padding-left: 100px;
+position: relative; 
+top: 15px;
+
+}
+.topnav .icon {
+display: none;
+
+
+}.home1{
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ }.home1 .my_home1 img{
+  width: 300px;
+	height: 450px;
+	border-radius:20px;	
+  align-items: center;
+ }.home_text{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }.my_home1{
+  justify-content: center;
+  padding-left: 70px;
+ }.part2_about{
+    margin: 0; 
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .t_about_me{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 58px;
+padding: 20px 20px;
+ }.skills{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+ .t_skills{
+ 
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+ }.tit_skills{
+  margin: 0; 
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }.image_skills{
+  border-radius: 20px;
+ 
+ }.my_skills{
+  
+  flex-direction: column;
+  align-items: center;
+ }.skills_description{
+  display: flex;
+  justify-content: center;
+
+ }.portflio{
+  padding: 25px 25px;
+ }
+ .t_portflio{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+ }.portf1{
+  width: 260px;
+height: 150px;
+border-radius: 20px;
+ }.head_portflio{
+  margin: 0; 
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }.all_portf{
+  display: flex;
+  justify-content: space-between;
+
+align-items: center;
+
+
+ }.portflio_a{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+ }.port_button{
+ background-color:#288282;
+
+ border-radius: 120px;
+text-align: center;
+
+
+
+}.port_button a{
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}.button_potfl{
+  display: flex;
+  justify-content: center;
+ 
+}.portflio_c{
+  margin: 0; 
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}.blog{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}.T_blog{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px; 
+}.blog_b{
+  width: 260px;
+  height: 150px;
+  border-radius: 20px;
+}.all_blog{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}.blog_to{
+  padding: 80px;
+}.box_sign_a{
+  text-decoration: none;
+  
+}.name_text_a{
+background: #D9D9D9;
+border: 3px solid #000000;
+border-radius: 10px;
+
+}.t_contact{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px; 
+}.contact_me{
+ 
+  /* justify-content: center;  try here  to list more thing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}.label_text_a{
+  display: flex;
+  flex-direction:column;
+}
+.contact_me input{
+   /* display: flex; */
+  flex-direction: column; 
+  align-items: center;
+}.contact_me button{
+  
+text-align: center;
+
+
+}.port_button a{
+  text-decoration: none;
+  color: white;
+ 
+}.ft{
+  position: relative;
+  top:30px;
+padding: 5px;
+width: 100%;
+margin: 0%;
+background: #288282;
+}.all_ft{
+  padding: 5px;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 300px;
+  position: relative;
+ 
+
+}.ft_1{
+  justify-content: center;
+  
+}.topnav .closebtn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 70px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+   .topnav a {
+    display: none;
+  } 
+  .topnav a.icon{
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float:none;
+    display: flex;
+    text-align: center;
+  padding: 1px;
+  justify-content: center;
+    
+  }
+  .topnav.responsive  {
+    float: none;
+    position: relative;
+    display: block;
+   text-align: left;
+  }.home1 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+   }.portflio_c{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+   }.all_portf{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+   }.all_blog{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }.all_ft{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }.skills_description{
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ 
+  }
+
