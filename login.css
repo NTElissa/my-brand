@@ -3,8 +3,9 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
-}body{
-    
+}
+body{
+ 
 position: relative;
 width: 1207px;
 height: 789px;
@@ -43,6 +44,7 @@ top: -50px;
     left: 332px;
    top: -50px;
     border-radius: 10px;
+    background-color: rgb(203, 201, 201);
 }.name_password{
     position: relative;
 width: 257.73px;
@@ -57,6 +59,7 @@ color: black;
     left: 310px;
     top: -15px;
     border-radius: 10px;
+    background-color:rgb(203, 201, 201);
 }.forget_password{
     position: relative;
     width: 286px;
@@ -64,6 +67,8 @@ color: black;
     left: 376px;
     top: 15px;
     
+}.forget_password:hover{
+    color:blue;
 }.submit{
     position: relative;
 width: 150px;
@@ -73,9 +78,17 @@ top: 10px;
 background-color: #288282;
 border-radius: 120px;
 text-decoration: none;
-}.submit a{
+border: none;
+color: #FFFFFF;
+}button .submit{
+    color: #FFFFFF;
+}
+.submit a{
     text-decoration: none;
     color:#FFFFFF;
+}.submit:hover{
+   
+    background-color: green;
 }
 .back{
     
@@ -87,4 +100,7 @@ top: 650px;
 border-radius: 10px;
 }.back a{
     text-decoration: none;
+}.back:hover{
+    color:red;
+    background-color: #474b4b;
 }

@@ -48,7 +48,14 @@ left: 920px;
 top: 116px;
 border-radius: 20px;
 background-color: #288282;
-}.home{
+}.icon_home{
+    position: absolute;
+   font-size: 60px;
+    left: 26px;
+    top: 310px;
+    color: #FFFFFF;   
+}
+.home{
     position: absolute;
 width: 93px;
 height: 81px;
@@ -56,7 +63,14 @@ left: 33px;
 top: 366px;
 color: #FFFFFF;
 
-}.add_blog{
+}.add_icon{
+    position: absolute;
+    font-size: 60px;
+     left: 30px;
+     top: 460px;
+     color: #FFFFFF;    
+}
+.add_blog{
     position: absolute;
 width: 141px;
 height: 87.7px;
@@ -64,30 +78,50 @@ left: 33px;
 top: 514px;
 color: #FFFFFF;
 
-}.message{
+}.publish_icon{
+    position: absolute;
+    font-size: 60px;
+     left: 30px;
+     top: 600px;
+     color: #FFFFFF;   
+}
+.publish{
     position: absolute;
 width: 123px;
 height: 81.13px;
 left: 33px;
-top: 666px;
+top: 660px;
 color: #FFFFFF;
 }.blog_b{
  position: absolute;
-width: 100px;
-height: 50px;
+width: 259px;
+height: 133px;
 left: 30px;
 top: 20px;
 background: #288282;
 border-radius: 20px;
-}.message_b{
+}.blog2_icon{
+    position: absolute;
+    font-size: 60px;
+     left: 40px;
+     top: 10px;
+     color: #FFFFFF;  
+}
+.message_b{
  position: absolute;
-width: 100px;
-height: 50px;
-left: 205px;
+width: 259px;
+height: 133px;
+left: 340px;
 top: 20px;
 
 background: #288282;
 border-radius: 20px;
+}.message_icon{
+    position: absolute;
+    font-size: 60px;
+     left: 40px;
+     top: 10px;
+     color: #FFFFFF; 
 }.in_box{
     position: absolute;
 width: 1000px;
@@ -98,19 +132,29 @@ top: 175px;
 background: #FFFFFF;
 }.draft_b{
     position: absolute;
-width: 100px;
-height: 50px;
-left: 400px;
+width: 259px;
+height: 133px;
+left: 650px;
 top: 20px;
 
 background: #288282;
 border-radius: 20px;
+}.draft_icon{
+    position: absolute;
+    font-size: 60px;
+     left: 40px;
+     top: 10px;
+     color: #FFFFFF;   
+} span{
+color:#FFFFFF;
+background-color: #B60E0E;
+border-radius: 360px;
 }.in_box1{
     position: absolute;
 width: 1000px;
 height: 1000px;
 left: 0px;
-top: 100px;
+top: 200px;
 
 background: #D9D9D9;
 }.mesg_t1{

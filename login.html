@@ -14,15 +14,44 @@
 
             </div>
             <div class="form-group">
+
+                <form name="form1" action="#"> 
                 <label class="name_email">Email</label>
-                <input type="email" class="email" name="email" placeholder="Enter valid Email......"><br>
+                <input type="email" class="email" id="Vemail" name='text1'   placeholder="Enter valid Email......"><br>
+                </form>
                 <label class="name_password">Password</label>
                 <input type="password" class="password" placeholder="Enter password........"><br>
-            </div>
+            </div><br>
             <a href="#" class="forget_password">Forget password</a>
-           <button class="submit" ><a href="file:///C:/Users/ELISSA/Desktop/Team_predators%20Andela/Admin_home.html" >login </a></button> 
-           <button   class="back"><a href="file:///C:/Users/ELISSA/Desktop/Team_predators%20Andela/responsive.html" >Back</a></button> 
+           <button class="submit"   name="submit" onclick="ValidateEmail(document.form1.text1)" value="login">
+            <!-- <a href="#" >login </a> -->Login
+        </button> 
+        </div>
+           <button   class="back"><a href="file:///C:/Users/ELISSA/Documents/my-brand/my_brand.html" >Back</a></button> 
         
     </div>
+    <script src="email-validation.js">
+    </script><script>
+    function ValidateEmail(inputText)
+    {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(inputText.value.match(mailformat))
+    {
+    document.form1.text1.focus();
+    window.location="file:///C:/Users/ELISSA/Documents/my-brand/Admin_home.html";
+    }
+    else
+    {
+    alert("You have entered an invalid email address!");
+    // document.form1.text1.focus();
+    // return false;
+    }
+    }
+    
+    
+    
+    </script>
+
 </body>
+
 </html>
