@@ -9,29 +9,27 @@
     height: 146px;
     left: 0px;
     top: 0px;
-    
-    background: #383232;
+    background:#288282;
 
 }.logo{
-    position: absolute;
-width: 80px;
-height: 80px;
-left: 22px;
-top: 21px;
+ position: relative;
+width: 60px;
+height: 100px;
+left: 15px;
+top: 15px;
 border-radius: 360px;
 }.my_image{
-    position: absolute;
-    width:100px;
-    height: 100px;
-    left: 22px;
-    top: 21px;
-    border-radius: 360px; 
+    position: relative;
+    width:120px;
+    height: 150px;
+    left: 15px;
+    top: 15px;
+    border-radius: 180px; 
 }.head_t{
-    position: absolute;
-width: 535.05px;
-height: 67.39px;
+    position: relative;
+font-size: 50px;
 left: 349px;
-top: 54px;
+top: -54px;
 
 
 color: #FFFFFF;
@@ -41,13 +39,15 @@ color: #FFFFFF;
     color: #FFFFFF;
 }
 .logout{
-    position: absolute;
-width: 200px;
-height: 58px;
-left: 920px;
-top: 116px;
+    position: relative;
+width: 150px;
+height: 50px;
+left: 550px;
+top: 20px;
 border-radius: 20px;
-background-color: #288282;
+background-color:#288282;
+}.logout:hover{
+    background-color: #123535;
 }.icon_home{
     position: absolute;
    font-size: 60px;
@@ -147,7 +147,7 @@ border-radius: 20px;
      color: #FFFFFF;   
 } span{
 color:#FFFFFF;
-background-color: #B60E0E;
+font-size: 30px;
 border-radius: 360px;
 }.in_box1{
     position: absolute;
@@ -164,21 +164,31 @@ height: 92.58px;
 left: 10px;
 top: 30px;
 color: black;
-}.edit1{
+}.view1{
     position: absolute;
-width: 120px;
+    width: 100px;
+    height: 40px;
+    left: 600px;
+    top: 40px;
+    
+    background: #288282;
+    border-radius: 10px;  
+}
+.edit1{
+    position: absolute;
+width: 100px;
 height: 40px;
-left: 600px;
-top: 30px;
+left: 730px;
+top: 40px;
 
 background: #288282;
 border-radius: 10px;
 }.dele1{
     position: absolute;
-width: 120px;
+width: 100px;
 height: 40px;
-left: 750px;
-top: 30px;
+left: 860px;
+top: 40px;
 
 background: #B60E0E;
 border-radius: 10px;
@@ -187,24 +197,35 @@ border-radius: 10px;
 width: 422.38px;
 height: 102.23px;
 left: 10px;
-top: 90px;
+top: 120px;
 color: #000000;
-}.edit2{
-    
+
+}.view2{
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: 40px;
     left: 600px;
-    top: 90px;
+    top: 130px;
+    
+    background: #288282;
+    border-radius: 10px  
+}
+.edit2{
+    
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 730px;
+    top: 130px;
     
     background: #288282;
     border-radius: 10px
 }.dele2{
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: 40px;
-left: 750px;
-top: 90px;
+left: 860px;
+top: 130px;
 
 background: #B60E0E;
 border-radius: 10px;
@@ -213,25 +234,35 @@ border-radius: 10px;
     width: 422.38px;
     height: 102.23px;
     left: 10px;
-    top: 150px;
+    top: 210px;
     
     color: #000000;
-}.edit3{
+}.view3{
+    position: absolute;
+    width: 100px;
+   height: 40px;
+    left: 600px;
+    top: 220px;
+    
+    background: #288282;
+    border-radius: 10px   
+}
+.edit3{
    
     position: absolute;
-    width: 120px;
+    width: 100px;
 height: 40px;
-    left: 600px;
-    top: 150px;
+    left: 730px;
+    top: 220px;
     
     background: #288282;
     border-radius: 10px  
 }.dele3{
     position: absolute;
-    width: 120px;
+    width: 100px;
     height: 40px;
-left: 750px;
-top: 150px;
+left: 860px;
+top: 220px;
 
 background: #B60E0E;
 border-radius: 10px; 
