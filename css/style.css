@@ -489,7 +489,7 @@ background: #288282;
     color: red; 
   }.topnav .closebtn:hover{
    
-    position: absolute;
+    position: relative;
     color:red;
    
     width: 0;
