@@ -1,0 +1,30 @@
+*{
+    font-size: 20px;
+    font-family: Arial;
+}table{
+  margin-left: 5%;
+  margin-right: 5%;
+ margin-top: 50px;
+}td{
+    width: 22%;
+   
+}.home_button{
+    margin-top: 20px;
+    margin-right: 1000px;
+    background-color:#288282;
+    border-radius: 10px;
+   
+border: none;
+}a{
+    text-decoration: none;
+    color:white;
+}.search-p{
+    border-radius: 30px;
+}.head_title{
+    padding-top: 50px;
+}.tr1{
+    background-color: #288282;
+   height: 70px;
+}td button:hover{
+background-color: rgb(52, 196, 181);
+}
