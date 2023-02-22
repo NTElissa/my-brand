@@ -4,31 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/addblog.css">
-    <title>add new blog</title>
+  <link rel="stylesheet" type="text/css" href="css/addblog.css">
+    <title>ADD NEW BLOG</title>
+  
 </head>
 <body>
-    <div class="container_all">
-        <p class="head_title">  Enter New Blog.</p>
-   <div class="boxing_size">
-
-
-    <div class="button_function">
-       
-          
-           <button class="save_draft"><a href="#">Save draft</a></button>
-           <button class="apply"><a href="#">Apply</a></button>
-           <button>  <input  type="file" class="insert_file" value="Add file"></button> <br>
-         </div>
-
-    <div class="text_box">
-        <textarea class="text_part" placeholder="  Enter new blog here" style="width: 40%;"></textarea>
-    </div> 
-    <a href="Admin_home.html">
-        <img src="images/Back.png" class="back_home"><br><p class="back_t"> Back</p> </a>
+   <h1> Hello  ,  Add new Article </h1>
+   <form>
+    <input type="text" name="title"  placeholder="ENTER AND TYPE TITLE" class="title_blog" required><br>
+    <textarea name="body"  placeholder =" ENTER AND TYPE BLOG"  required></textarea>
+    <button class="button_submit"> create</button>
+   </form>
+  <a href="Admin_home.html"> <img src="images/Back.png" class="back_home"><br><p class="back_t"> Back</p> </a>
    
 
 </div></div>
-
+<script src="js/addblog.js"></script>
 </body>
+
 </html>

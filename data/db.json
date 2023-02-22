@@ -1,0 +1,27 @@
+{
+  "posts": [
+    {
+      "title": "elisssa",
+      "body": "hello programmer",
+      "id": 1
+    },
+    {
+      "title": "computer",
+      "body": "alwys",
+      "id": 2
+    },
+    {
+      "title": "blance",
+      "body": "type and type",
+      "id": 3
+    }
+  ],
+  "polls": [
+    {
+      "id": 1,
+      "question": "do you think vue or react",
+      "answerA": "vue",
+      "answerB": "react"
+    }
+  ]
+}

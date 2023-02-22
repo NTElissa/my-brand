@@ -1,0 +1,33 @@
+*{
+    font-size: 20px;
+    font-family: Arial;
+}body{
+   margin-top: 60px;
+   background-color: rgb(160, 207, 192);
+}.details{
+    width: 60%; 
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 150px;
+    padding: 60px 60px 200px 60px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}button{
+   
+  
+    width: 90px;
+    margin-top: 40px;
+   
+}h1{
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 50px;
+    font-size: large;
+}span{
+    margin-left: 300px;
+}@media screen and (max-width:900px){
+    span{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

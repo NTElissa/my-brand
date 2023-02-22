@@ -129,7 +129,7 @@ height: 1000px;
 left: 204px;
 top: 175px;
 
-background: #FFFFFF;
+background: #D9D9D9;
 }.draft_b{
     position: absolute;
 width: 259px;
@@ -152,118 +152,32 @@ border-radius: 360px;
 }.in_box1{
     position: absolute;
 width: 1000px;
-height: 1000px;
+
 left: 0px;
 top: 200px;
 
 background: #D9D9D9;
-}.mesg_t1{
-    position: absolute;
-width: 423.22px;
-height: 92.58px;
-left: 10px;
-top: 30px;
-color: black;
-}.view1{
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    left: 600px;
-    top: 40px;
-    
-    background: #288282;
-    border-radius: 10px;  
-}
-.edit1{
-    position: absolute;
-width: 100px;
-height: 40px;
-left: 730px;
-top: 40px;
-
-background: #288282;
-border-radius: 10px;
-}.dele1{
-    position: absolute;
-width: 100px;
-height: 40px;
-left: 860px;
-top: 40px;
-
-background: #B60E0E;
-border-radius: 10px;
-}.mesg_t2{
-    position: absolute;
-width: 422.38px;
-height: 102.23px;
-left: 10px;
-top: 120px;
-color: #000000;
-
-}.view2{
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    left: 600px;
-    top: 130px;
-    
-    background: #288282;
-    border-radius: 10px  
-}
-.edit2{
-    
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    left: 730px;
-    top: 130px;
-    
-    background: #288282;
-    border-radius: 10px
-}.dele2{
-    position: absolute;
-    width: 100px;
-    height: 40px;
-left: 860px;
-top: 130px;
-
-background: #B60E0E;
-border-radius: 10px;
-}.mesg_t3{
-    position: absolute;
-    width: 422.38px;
-    height: 102.23px;
-    left: 10px;
-    top: 210px;
-    
-    color: #000000;
-}.view3{
-    position: absolute;
-    width: 100px;
-   height: 40px;
-    left: 600px;
-    top: 220px;
-    
-    background: #288282;
-    border-radius: 10px   
-}
-.edit3{
-   
-    position: absolute;
-    width: 100px;
-height: 40px;
-    left: 730px;
-    top: 220px;
-    
-    background: #288282;
-    border-radius: 10px  
-}.dele3{
-    position: absolute;
-    width: 100px;
-    height: 40px;
-left: 860px;
-top: 220px;
-
-background: #B60E0E;
-border-radius: 10px; 
+}table td{
+width: 30%;
+}th{
+    font-size: 30px;
+    background-color: #0f9797;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}.no{
+    width: 10px;
+    padding-right: 5px;
+}table .text{
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 5px;
+}table .button_t{
+    width: 30%;
+    padding-left: 5px;
+  
+}table .time{
+    padding-left: 50px;
+    justify-content: center;
+}tr td{
+    padding-top: 30px;
 }

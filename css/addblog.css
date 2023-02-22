@@ -1,65 +1,62 @@
 *{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
- 
- }body{
-
-background:#288282;
-
-}.head_title{
-    display:flex;
-    font-size: 40px;
-   justify-content: center;
-   color:white;
-}.boxing_size{
-    box-sizing: border-box;
-    background-color: aliceblue;
-    margin-left: 30px;
-    margin-right: 30px;    
-}.text_box{
-  
+    font-size: 25;
+    font-family: Arial;
+}h1{
     justify-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    height: 300px;
-
-}textarea{
-
-    margin-bottom: 70px;
- height: 100%;
-    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 50px;
+    font-size: large; 
 }
-.button_function{
-    padding-top: 40px;
-    justify-content: space-between;
-    padding: 30px 40px 60px 40px;
-    flex-direction: column;
-    padding-left: 500px;
-}.insert_file{
-   
+form{
+    width: 60%; 
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 150px;
+    padding: 60px 60px 200px 60px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}body{
+    margin-top: 60px;
+}.title_blog{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    display: flex;
     justify-content: space-between;
-}.save_draft{
-    margin-top:50px;
-    background-color: #288282;
-}.apply{
-   
-    margin-top:50px;
-    background-color: #288282;  
-}.back_home{
+    width: 70%;
+    height: 40px;
+ position: relative;
+}input :focus{
+    color: rgb(12, 190, 196);
+}input[type=placeholder]{
+    color: black;
+    font-size: 300px;
+}textarea{
     position: relative;
-   margin-top:20px;
-    margin-left: 100px;
-}a{
-    text-decoration: none;
-    color:aliceblue;
+    display: flex;
+margin-top: 50px;
+ width: 70%;
+ height: 300px;
+}.button_submit{
+    color: aquamarine;
+    background-color:rgb(28, 142, 28); 
+    width: 20%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}.button_submit:hover{
+background-color:rgb(12, 54, 12);
+}img {
+    margin-left: 200px;
 }.back_t{
-    display: none;
+    margin-left: 200px;
+    margin-top: -20px;
+}@media screen and (max-width:900px){
+    textarea{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+       
+
+    }.button_submi{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    } 
 }
