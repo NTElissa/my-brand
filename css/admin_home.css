@@ -180,4 +180,19 @@ width: 30%;
     justify-content: center;
 }tr td{
     padding-top: 30px;
+}.button_t a{
+    color: black;
+    font-size: 30px;
+}
+@media screen and (max-width:900px) {
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}span{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;  
+}
+
 }

@@ -4,7 +4,6 @@ const form = document.querySelector('form');
     const doc={
         title:form.title.value,
         body:form.body.value,
-        image:form.body.value,
      
     }
     await fetch('http://localhost:3000/posts',{
@@ -12,6 +11,6 @@ const form = document.querySelector('form');
         body:JSON.stringify(doc),
         headers:{ 'content-type' : 'application/json' }
     });
-  window.location.replace('admin_home.html');
+  window.location.replace('message_box.html');
 }
 form.addEventListener('submit', createPost);

@@ -1,4 +1,5 @@
 const container=document.querySelector('.publish_blog');
+const postbtn=document.querySelector('.btn_publish')
 const renderPosts = async () => {
     let uri='http://localhost:3000/posts';
     const res= await fetch(uri);
@@ -7,14 +8,14 @@ const renderPosts = async () => {
    posts.forEach(post => {
     template +=  `
  <div class="table-page">
-        <table class="all_table"  >
+        <table class="all_table" >
             <tr class="tr1">
         </tr>
             <tr class="tr2">
                 <td class="no">${post.id}</td>
-                <td class="text">${post.title}</td>
+                <td class="title_message">${post.title.slice(0,20)}</td><br>
               
-                 <td class="time">${post.body}</td>
+                 <td class="body_content">${post.body.slice(120,200)}</td><br>
                 <td class="button_t">
           <button class="btn_publish">Publish</button></td>
             
@@ -31,7 +32,12 @@ const renderPosts = async () => {
    container.innerHTML = template;
 }
 
- 
+postbtn.addEventListener('click',async (e) =>{
+    const res= await fetch('http://localhost:3000/posts/' +id,{
+   method: 'POST',
+    })
+    window.location.replace('index.html');
+   }) 
 
 
 window.addEventListener('DOMContentLoaded',()=> renderPosts());

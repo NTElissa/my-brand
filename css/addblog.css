@@ -12,11 +12,18 @@ form{
     background: #fff;
     border-radius: 10px;
     margin-left: 150px;
+    margin-right: 10px;
     padding: 60px 60px 200px 60px;
     box-shadow: 0 5px 10px rgb(0,0,0,0.2);
 }body{
     margin-top: 60px;
 }.title_blog{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 40px;
+ position: relative;
+}.title_image{
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -58,5 +65,19 @@ background-color:rgb(12, 54, 12);
         justify-content: space-between;
         display: flex;
         flex-direction: column;
-    } 
+    }img .back_t{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;  
+    }form{
+ width: 100%;
+margin-left: 0px;
+margin-right: 0px;
+    }h1{
+margin-left: 0px;
+margin-right: 80px;
+    
+text-align: center; 
+
+    }
 }
