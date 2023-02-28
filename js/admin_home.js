@@ -12,7 +12,7 @@ const renderPosts = async () => {
         </tr>
             <tr class="tr2">
                 <td class="no">${post.id}</td>
-                <td class="text">${post.title.slice(0,30)}</td>
+                <td class="text">${post.title.slice(0,20)}</td>
                  <td class="time">9:00am</td>
                 <td class="button_t">
            <a href="/details.html?id=${post.id}"> view </a></td>
@@ -23,7 +23,6 @@ const renderPosts = async () => {
                                        
         </table></div>
                        
-
     `
     
    })

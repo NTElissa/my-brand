@@ -1,0 +1,49 @@
+.messag{
+    width: 60%; 
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-right: 10px;
+    padding: 60px 60px 200px 60px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+ 
+}p{
+    color:black;
+}.delete{
+   
+    border: none;
+    font-size: 20px;
+}.delete:hover{
+    background-color: aquamarine;
+}.back{
+    
+    border: none;
+    font-size: 20px;  
+}.back:hover{
+    background-color: aquamarine;  
+}a{
+    text-decoration: none;
+    display: flex;
+}.all_buttons{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+@media screen and (max-width:900px) {
+    .messag{
+    box-shadow: none;
+     justify-content: center;
+     margin: 0% 0% 0% 0%;
+    }body{
+     width: 100%;
+    }.all_buttons{
+        padding-top:none;
+        position: relative;
+        align-items: center;
+       margin-bottom: 100px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

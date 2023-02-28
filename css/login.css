@@ -1,8 +1,35 @@
-*{
-    font-size: 20px;
+body{ 
+    background: #fff;
 }
-.log{
-   
+form {
+    width: 60%; 
+    background: #fff;
+    border-radius: 10px;
+    margin-left: 180px;
+    margin-right: 10px;
+    padding: 60px 60px 200px 60px;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.2);
+}.title_head{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}.form_page{
+    margin-top: 140px;
+}
+input[type=email], input[type=password],input[type=text] {
+    width: 60%;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: flex;
+   box-sizing: border-box;
+    background: #dee0e4;
+    border-radius:5px;
+    color:hsl(0, 0%, 100%);
+}.log{
     width: 80px;
     height: 80px;
     margin-top: 10px;
@@ -12,25 +39,42 @@
     justify-content:center;
     flex-direction: column;
     align-items: center;
-
+ 
+}
+.submitbtn {
+    background-color: #288282;
+    color:black;
+    padding: 7px 10px;
+    margin-left: 510px;
+    cursor: pointer;
+    width: 10%;
+    border-radius: 5px;
+    display: flex;
     
-    }.title_head{
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
-        flex-direction: column;
-        justify-content: space-between;
-        
-    }body{
-        width: 60%; 
-        background: #fff;
-        border-radius: 10px;
-        margin-left: 150px;
-        margin-right: 10px;
-        padding: 60px 60px 100px 60px;
-        box-shadow: 0 5px 10px rgb(0,0,0,0.2);
-    }label {
+}
+.submitbtn:hover {
+    opacity: 0.8;
+    background-color: green;
+    color:black;
+    border:2px solid #CCD6F6;
+}
+
+.container {
+  font-size: 20px;
+}
+input [type=placeholder]{
+    color:#000000;
+}
+label{
+    color:#000000;
+}
+input:focus {
+    color:#000000;
+}
+*{
+    font-size: 20px;
+}
+label {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -61,9 +105,10 @@
   margin-left: 500px;
     }a{
         text-decoration: none;
-    }.forget_password{
-        display: flex;
-        padding-bottom: 60px;
+    }.Signup{
+        margin-top: 100px;
+        
+        padding: 20px;
     }.back:hover{
       
         font-size: 18px;
@@ -77,3 +122,6 @@
         display: flex;
       
     }
+
+
+

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUBLISH BLOG</title>
     <link rel="stylesheet" href="css/publish.css" type="text/css" media="screen" />
+    <link rel = "icon" href = "images/tick-inside-circle.png" type = "image/x-icon">
+  
 </head>
 <body>
     <a href="Admin_home.html">HOME</a>
@@ -20,23 +22,32 @@
     <div class="publish_blog">
 
         <div class="table-page">
-            <table class="all_table"  >
+            <table class="all_table" >
                 <tr class="tr1">
-                   
             </tr>
                 <tr class="tr2">
                     <td class="no"></td>
-                    <td class="title_message"></td>
+                    <td class="title_message"></td><br>
                   
-                     <td class="body_content"></td>
+                     <td class="body_content"></td><br>
                     <td class="button_t">
-              <button class="btn_publish"></button></td>
+              <button class="btn_publish">Publish</button>
+              <button class="btn_publish" onClick="renderDetails()">edit</button>
+              <button class="delete">delete</button>
+              </td>
                 
-                </table></div>
+                        
+                                                     
+            </table></div>
 
 
     </div>
+
+
+
   
     <script src="js/publish.js"></script>
+   
+
 </body>
 </html>

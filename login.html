@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>LOG IN</title>
-    <link rel="stylesheet" type="text/css" href="css/login.css">
-    <script src="data/login.js"></script>
-    <script src="login_validation.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel = "icon" href = "images/tick-inside-circle.png" type = "image/x-icon">
 </head>
 <body>
-   
-        <div class="container" >
-            <div class="row1">
-                <button class="log"><h1>Ne</h1></button>
-                <p class="title_head"> Welcome,  Elissa Ntihinduka</p>
+<form name="form" action="Admin_home.html" onsubmit="return logedin()">
 
-            </div>
-            
-            <div class="form-group">
 
-                <form name="form1" action="#"> 
-                <label class="name_email">Email</label>
-                <input type="email" class="email" id="Vemail" name='text1'   placeholder="Enter valid Email......"><br>
-            </form>
-                <label class="name_password">Password</label>
-                <input type="password" class="password" placeholder="Enter password........"><br>
-           <br>
-           <a href="Admin_home.html" ><button class="submit"   name="submit" onclick="ValidateEmail()" value="login">
-            Login
-        </button></a>
-            <a href="#" class="forget_password">Forget password</a>
-          </div>
-     
-           <button   class="back"><a href="index.html" >Back</a></button> 
-        </div> 
-    </div>
-    
+    <div class="container">
 
+        <div class="row1">
+            <button class="log"><h1>Ne</h1></button>
+            <p class="title_head"> Welcome,  Elissa Ntihinduka</p>
+
+        </div>
+<div class="form_page">
+        <label ><b>Email</b></label>
+        <label>
+            <input type="text" id="email" placeholder="Enter Email" name="email"  required>
+        </label>
+
+        <label><b>Password</b></label>
+        <label>
+            <input type="password" id="password"placeholder="Enter Password" name="psw" required>
+        </label>
+
+        <a ><button type="submit" id="login"  class="submitbtn">Login</button></a>
+        <div class="Signup">
+        
+  
+    <label>
+        <a  href="signup1.html">Sign up</a>
+    </label>  </div></div>
+
+
+</form>
+<button   class="back"><a href="index.html" >Back</a></button>
+<script>
+ 
+
+</script>
 </body>
-
+<script  src="js/signin.js"></script>
 </html>

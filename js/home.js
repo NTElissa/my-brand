@@ -8,9 +8,9 @@ const renderPosts = async () => {
     template +=  `
     <div class="all_blog">
     <div class="blog_to">
-    ${post.image}
+    <img src="${post.image}" class="blog_b">
   <p class="t_box_a">
-   ${post.body.slice(0,20)}
+   ${post.body.slice(0,40)}
   </p>
   <a  href="#" class="box_sign_a" ><h1> >> </h1></a></div>
   
