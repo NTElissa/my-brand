@@ -11,13 +11,24 @@
     margin-left: 150px;
     padding: 60px 60px 200px 60px;
     box-shadow: 0 5px 10px rgb(0,0,0,0.2);
-}button{
+}.delete{
    
   
     width: 90px;
     margin-top: 40px;
    
-}h1{
+}.edit{
+    position: relative;
+   align-items: center;
+    width: 90px;
+}.edit a{
+    text-decoration: none;
+    
+}.editbtn{
+    margin-top: 60px;
+    margin-left: 80px;
+}
+h1{
     justify-content: center;
     margin-left: 200px;
     margin-right: 50px;

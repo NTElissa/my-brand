@@ -13,6 +13,9 @@ const template =
 <img src="${post.image}"><br>
 <p>${post.body}<p>
    </tr>
+  <div class="editbtn"> <button class="edit" onclick="updateBlog()">
+   <a href="/update.html?id=${post.id}"> edit </a></button></div>
+   
 `
 container.innerHTML= template;
 }
@@ -26,20 +29,6 @@ const res= await fetch('http://localhost:3000/posts/' +id,{
 window.addEventListener('DOMContentLoaded', () => renderDetails());
 
 
-
-const updateBlog = async() =>{
-  const ulrParams = new URLSearchParams(window.location.search);
-  if(ulrParams.has('id')){
-    
-    const blogId = ulrParams.get('id');
-    document.getElementById('add_article').textContent = "Edit article ";
-    const res= await fetch('http://localhost:3000/posts/' +blogId);
-    const blog = await res.json();
-    let title = document.querySelector('.title_blog').value = blog.title;
-    let image = document.querySelector('.title_image').value = blog.image;
-    let content = document.querySelector('.content').value = blog.body;
-  }window.location('addlog.html');
-}
 
 
 

@@ -4,7 +4,7 @@ const form = document.querySelector('form');
     const doc={
         title:form.title.value,
         body:form.body.value,
-        image:form.body.value,
+        image:form.image.value,
      
     }
     await fetch('http://localhost:3000/posts',{
