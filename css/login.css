@@ -165,7 +165,11 @@ label {
     }@media screen and (min-width:540px){
         .submitbtn{
             width: 30%;
+          }input[type=email], input[type=password],input[type=text]{
+            width: 160%;
           }
+
+
     }@media screen and (min-width:768px){
         .submitbtn{
             width: 20%;
