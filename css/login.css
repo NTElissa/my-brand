@@ -106,10 +106,14 @@ label {
     }a{
         text-decoration: none;
     }.Signup{
-        margin-top: 100px;
-        
+        margin-top: 0px;
+        margin-left: 120px;
         padding: 20px;
-    }.back:hover{
+    }.back{
+        margin-top: 50px;
+        margin-left: 140px;  
+    }
+    .back:hover{
       
         font-size: 18px;
         outline: none;
@@ -121,10 +125,11 @@ label {
         transition: all 0.3s ease;
         display: flex;
       
-    }@media screen and (max-width:1000px){
+    }@media screen and (max-width:1080px){
       form{
        box-shadow: none;
        margin: 0px 0px 0px 0px;
+     
       }.submitbtn{
         margin-left: 70px;
         background-color: #288282;
@@ -144,8 +149,29 @@ label {
         margin-left: -20px;
       }.back{
         margin-top: 100px;
+        margin-left: 0px;
       }
+    }@media screen and (max-width:280px){
+        input[type=email], input[type=password],input[type=text]{
+            width: 140%;
+          }.submitbtn{
+            width: 300%;
+            background-color: #fff;
+            border: none;
+            color: #288282;
+            font-size: 30px;
+          }
+
+    }@media screen and (max-width:540px){
+        .submitbtn{
+            width: 30%;
+          }
+    }@media screen and (max-width:768px){
+        .submitbtn{
+            width: 20%;
+          }
     }
+
 
 
 

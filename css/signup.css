@@ -48,5 +48,33 @@ label{
 input:focus {
     color:#000000;
 }
+@media screen and (max-width:1000px){
+    form{
+     box-shadow: none;
+     margin: 0px 0px 0px 0px;
+    }button{
+      margin-left: 70px;
+      background-color: #288282;
+     
+      color:black;
+      padding: 7px 10px;
+    
+      cursor: pointer;
+      width: 40%;
+      border-radius: 5px;
+      display: flex;
+      
+    }input[type=email], input[type=password],input[type=name],input[type=text]{
+      width: 100%;
+    }
+  }@media screen and (min-width:1024px){
+    button{
+        margin-left:170px;
+    }
+  }@media screen and (min-width:768px){
+    button{
+        width: 20%;
+    }
+  }
 
 
