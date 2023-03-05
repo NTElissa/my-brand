@@ -35,12 +35,19 @@ h1{
     font-size: large;
 }span{
     margin-left: 300px;
-}@media screen and (max-width:900px){
-    span{
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }body{
-        width: 100%;
+}@media screen and (max-width:1000px){
+    .details{
+box-shadow: none;
+width: 100%;
+padding: 0% 0% 0% 0%;
+margin:0px 0px 0px 0px;
+    }.image{
+        margin-left: 40px;
+        width: 300px;
+    }.delete{
+        margin-left: -60px;
+    }h1{
+        padding: 0% 0% 0% 0%;
+        margin:0px 0px 0px 0px; 
     }
 }

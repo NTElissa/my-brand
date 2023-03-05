@@ -10,7 +10,7 @@ const template =
 ` 
 <tr class="tr2">
 <p class="title">${post.title}</p><br>
-<img src="${post.image}"><br>
+<img  class="image" src="${post.image}"><br>
 <p>${post.body}<p>
    </tr>
   <div class="editbtn"> <button class="edit" onclick="updateBlog()">
