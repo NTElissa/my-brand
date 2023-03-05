@@ -1,4 +1,4 @@
-const container=document.querySelector('.table-page');
+const container=document.querySelector('.table_data');
 const renderPosts = async () => {
     let uri='http://localhost:3000/posts';
     const res= await fetch(uri);
@@ -6,22 +6,16 @@ const renderPosts = async () => {
    let template='';
    posts.forEach(post => {
     template +=  `
- <div class="table-page">
-        <table class="all_table"  >
-            <tr class="tr1">
-        </tr>
-            <tr class="tr2">
-                <td class="no">${post.id}</td>
-                <td class="text">${post.title.slice(0,20)}</td>
-                 <td class="time">9:00am</td>
-                <td class="button_t">
-           <a href="/details.html?id=${post.id}"> view </a></td>
-            
-                    </tr>
-                    
-                                    
-                                       
-        </table></div>
+    
+    <div class="inbox_infomation">
+    <table border="1" class="table_data">
+        <tr>
+  <td><p class="id">${post.id}</p></td>
+   <td><p class="title">${post.title.slice(0,200)} </p></td>
+   
+   <td><p class="time">12:00 am 12/20/2023 </p></td> 
+   <td> <a href="/details.html?id=${post.id}">...Read More </a>  </p></td> 
+</div></tr></table>
                        
     `
     
