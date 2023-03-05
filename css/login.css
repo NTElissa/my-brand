@@ -162,11 +162,11 @@ label {
             font-size: 30px;
           }
 
-    }@media screen and (max-width:540px){
+    }@media screen and (min-width:540px){
         .submitbtn{
             width: 30%;
           }
-    }@media screen and (max-width:768px){
+    }@media screen and (min-width:768px){
         .submitbtn{
             width: 20%;
           }
