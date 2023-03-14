@@ -1,23 +1,28 @@
 
 
+async function userLogin(){
+    const emailValue = document.getElementById("email").value
+    const passwordValue = document.getElementById("password").value
+    const data = {email: emailValue, password: passwordValue}
+    // use fetch method to interact with your login api endpoint
 
-users = JSON.parse(localStorage.getItem('users')) || [];
-console.log(users)
-
-
-function logedin(){
-    // check if user exists
-    let password=document.getElementById("password");
-    let targetUser = users.find(user => user.password == password.value);
-    console.log("Target user"+targetUser);
-
-    if(targetUser)  {
-        // localStorage.setItem('currentUser', JSON.stringify(targetUser))
-        return true;
-    }
-    else{
-        alert("wrong password or email is wong\n\n or sign up");
-        // console.log("Password" + targetUser.password);
-    }
-    return false;
-}
+    await fetch('http://localhost:5000/api/v1/login', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+        .then ((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            if (data.message==="Logged in successfully") {
+            
+                alert(data.message)
+                location.href="Admin_home.html" ; 
+            } else {
+                alert(data.message)
+            }
+        })
+        .catch(err => alert(err))
+};

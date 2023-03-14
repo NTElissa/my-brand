@@ -7,11 +7,12 @@ const form = document.querySelector('form');
         image:form.image.value,
      
     }
-    await fetch('http://localhost:3000/posts',{
+    await fetch('http://localhost:5000/api/v1/blogs',{
         method:'POST',
         body:JSON.stringify(doc),
         headers:{ 'content-type' : 'application/json' }
     });
-  window.location.replace('admin_home.html');
+   window.location.replace('admin_home.html');
+  // alert("Blog sent to database")
 }
 form.addEventListener('submit', createPost);

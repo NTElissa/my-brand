@@ -1,29 +1,32 @@
-// identify forminput field values by time of clicking submit
-const nameField = document.getElementById('fname');
-const nameField2 = document.getElementById('sname');
-const emailField = document.getElementById('email');
-const password = document.getElementById('password');
-// signup button
-const signup = document.getElementById('signup');
 
 
-users = JSON.parse(localStorage.getItem('users')) || [];
+const formSignUp = document.querySelector("#formSignUp");
+formSignUp.addEventListener("submit", (event) => {
+    event.preventDefault();
 
-function saveUser() {
-    const email = emailField.value;
-    // check if the user with the given email already exists in local storage
-    const userExists = users.some(user => user.email === email);
-    if (userExists) {
-        alert('User with this email already exists. Please use a different email address.');
-        return;
-    }
-    let user = {};
-    user.firstName = nameField.value;
-    user.lastName = nameField2.value;
-    user.email = emailField.value;
-    user.password = password.value;
-    users.push(user);
-    const stringUsers = JSON.stringify(users);
-    localStorage.setItem('users', stringUsers);
-}
-signup.onclick = saveUser;
+    //get data from user
+    const firstname = document.getElementById("fname").value;
+    const lastname = document.getElementById("sname").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const data = { firstname, lastname, email, password };
+    //interacy with endpoint
+    fetch("http://localhost:5000/api/v1/signup", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    })
+        .then((resp) => {
+            return resp.json();
+        })
+        .then((data) => {
+            alert(data.message);
+        })
+        .catch((error) => {
+            console.error(error);
+            alert("An error occurred during sign-up. Please try again later.");
+        });
+});

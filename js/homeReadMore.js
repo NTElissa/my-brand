@@ -1,21 +1,23 @@
+function readMore(){
 const id = new URLSearchParams( window.location.search).get('id');
 const container= document.querySelector('.container');
-
-const  renderDetails = async () => {
+const blogTitle=document.querySelector('#title')
+const blogImage=document.querySelector('#image')
+const blogBody=document.querySelector('#body')
+// const  renderDetails = async () => {
   
-  const res= await fetch('http://localhost:3000/posts/' +id);
-  const post = await res.json();
-const template =
-` 
-<p class="title">${post.title}</p><br>
-<img src="${post.image}"><br>
-<p>${post.body}<p>
-    
-`
-container.innerHTML= template;
-}
-window.addEventListener('DOMContentLoaded', () => renderDetails());
+ fetch(`http://localhost:5000/api/v1/blogs/${id}`)
+ 
+  .then(resp => resp.json())
+  
+ .then (template =>{
+  blogTitle.innerHTML = template.data.title
+  blogImage.innerHTML = `<img src="${template.data.image}">`
+  blogBody.innerHTML = template.data.body
 
+}
+
+)}
 
 
 

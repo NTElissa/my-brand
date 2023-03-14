@@ -1,34 +1,24 @@
+
+ function AdminReadMore(){
 const id = new URLSearchParams( window.location.search).get('id');
 const container= document.querySelector('.details');
 const deletebtn=document.querySelector('.delete');
 
-const  renderDetails = async () => {
-  
-  const res= await fetch('http://localhost:3000/posts/' +id);
-  const post = await res.json();
-const template =
-` 
-<tr class="tr2">
-<p class="title">${post.title}</p><br>
-<img  class="image" src="${post.image}"><br>
-<p>${post.body}<p>
-   </tr>
-  <div class="editbtn"> <button class="edit" onclick="updateBlog()">
-   <a href="/update.html?id=${post.id}"> edit </a></button></div>
-   
-`
-container.innerHTML= template;
-}
-deletebtn.addEventListener('click',async (e) =>{
-const res= await fetch('http://localhost:3000/posts/' +id,{
- method: 'DELETE'
-  })
-  window.location.replace('admin_home.html');
- }) 
 
-window.addEventListener('DOMContentLoaded', () => renderDetails());
+const blogTitle=document.querySelector('#title')
+const blogImage=document.querySelector('#image')
+const blogBody=document.querySelector('#body')
 
+fetch(`http://localhost:5000/api/v1/blogs/${id}`)
 
+.then(resp => resp.json())
+
+.then (template =>{
+  blogTitle.innerHTML = template.data.title
+  blogImage.innerHTML = `<img src="${template.data.image}">`
+  blogBody.innerHTML = template.data.body
+
+ })}
 
 
 

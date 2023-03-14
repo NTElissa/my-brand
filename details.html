@@ -10,9 +10,17 @@
     
     <link rel="stylesheet" type="text/css" href="css/addblog.css">
 </head>
-<body>
+<body onload="AdminReadMore()">
     <h1>HELLO   !!  DELETE  AND MODIFY </h1>
     <div class="details">
+
+         <tr class="tr2">
+        <p class="title" id="title"></p><br>
+    <p  class="image" id="image" ></p><br>
+      <p id="body"><p>
+       </tr>
+        <div class="editbtn"> <button class="edit" onclick="updateBlog()">
+         <a href="/update.html?id=${post.id}"> edit </a></button></div>
 
     </div>
     <span class="button_all">
