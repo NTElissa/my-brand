@@ -1,25 +1,34 @@
 const container = document.querySelector('form');
 
-const updateBlog = async() => {
-  const id = new URLSearchParams(window.location.search).get('id');
-  const res = await fetch(`http://localhost:3000/posts/${id}`);
-  const post = await res.json();
-  const template = `
-    <form>
-      <input type="text" name="title" value="${post.title}" placeholder="ENTER AND TYPE TITLE" class="title_blog" required><br>
-      <input type="text" name="image" value="${post.image}" placeholder="ENTER AND TYPE IMAGE" class="title_image" required><br>
-      <textarea name="body" placeholder="ENTER AND TYPE BLOG" class="content" required>${post.body}</textarea>
-      <button class="button_submit" onclick="updatePostNow()">UPDATE</button>
-    </form>
-  `;
-  container.innerHTML = template;
+// This function will get the existing blog post data from the server
+function getUpdate() {
+  const blogTitle = document.querySelector("#title");
+  const blogImage = document.querySelector("#image");
+  const blogBody = document.querySelector("#body");
+
+  const id = new URLSearchParams(window.location.search); 
+  const editBlogs = id.get('id');
+  console.log(editBlogs);
+
+  fetch(`http://localhost:5000/api/v1/blogs/${editBlogs}`)
+    .then(res => res.json())
+    .then(template => {
+      blogTitle.value = template.data.title;
+      blogImage.value = template.data.image;
+      blogBody.value = template.data.body;
+    })
+    .catch(error => {
+      console.error(error);
+    });
 }
 
-const updatePostNow = async() => {
-  const id = new URLSearchParams(window.location.search).get('id');
-  const title = document.querySelector('input[name="title"]').value;
-  const image = document.querySelector('input[name="image"]').value;
-  const body = document.querySelector('textarea[name="body"]').value;
+// This function will update the existing blog post data
+async function updatePostNow() {
+  const id = new URLSearchParams(window.location.search); 
+  const editBlogs = id.get('id');
+  const title = document.querySelector('#title').value;
+  const image = document.querySelector('#image').value;
+  const body = document.querySelector('#body').value;
 
   const doc = {
     title: title,
@@ -27,15 +36,23 @@ const updatePostNow = async() => {
     image: image,
   };
 
-  await fetch(`http://localhost:3000/posts/${id}`, {
-    method: 'PUT',
-    body: JSON.stringify(doc),
-    headers: {
-      'content-type': 'application/json'
-    }
-  });
+  try {
+    const response = await fetch(`http://localhost:5000/api/v1/blogs/${editBlogs}`, {
+      method: 'PUT',
+      body: JSON.stringify(doc),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
 
-  window.location.replace('admin_home.html');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    window.location.replace('admin_home.html');
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
 
 container.addEventListener('submit', (event) => {
@@ -43,4 +60,4 @@ container.addEventListener('submit', (event) => {
   updatePostNow();
 });
 
-window.addEventListener('DOMContentLoaded', updateBlog);
+window.addEventListener('DOMContentLoaded', getUpdate);

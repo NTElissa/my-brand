@@ -1,30 +1,19 @@
-const id = new URLSearchParams( window.location.search).get('id');
-const container= document.querySelector('.messag');
-const deletebtn=document.querySelector('.delete');
+function AdminReadMoreMessage() {
+  const id = new URLSearchParams(window.location.search).get('id');
+  const container = document.querySelector('.messag');
+  const deletebtn = document.querySelector('.delete');
+  const messageId = document.querySelector('#id');
+  const messageName = document.querySelector('#name');
+  const messageEmail = document.querySelector('#email');
+  const messageMessage = document.querySelector('#message');
 
-const  renderDetails = async () => {
-  
-  const res= await fetch('http://localhost:3000/messages/' +id);
-  const post = await res.json();
-const template =
-` 
-<div class="messag">
-<p class="title">${post.id}</p><br>
-<p class="title">${post.email}</p><br>
-<p class="title">${post.names}</p><br>
-<p class="title">${post.message}</p><br>
-
-
-</div>
-
-`
-container.innerHTML= template;
+  fetch(`http://localhost:5000/api/v1/message`)
+    .then((resp) => resp.json())
+    .then((data) => {
+      messageId.innerHTML = data.data._id;
+      messageName.innerHTML = data.data.name;
+      messageEmail.innerHTML = data.data.email;
+      messageMessage.innerHTML = data.data.message;
+    })
+    .catch((error) => console.log(error));
 }
-deletebtn.addEventListener('click',async (e) =>{
-const res= await fetch('http://localhost:3000/messages/' +id,{
- method: 'DELETE'
-  })
-  window.location.replace('admin_home.html');
- }) 
-
-window.addEventListener('DOMContentLoaded', () => renderDetails());
