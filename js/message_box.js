@@ -19,7 +19,7 @@ function messageAdmin() {
                 <p class="id">${post[i]._id.slice(0,0)}</p>
                     <p class="email">${post[i].email}</p>
                     <p class="body_message">${post[i].message.slice(0,200)}<br> 
-                    <a href="/message_readmore.html?id=${post[i].id}"> Read more... </a> </p>
+                    <a href="/message_readmore.html?id=${post[i]._id}"> Read more... </a> </p>
                     <p class="date">${formattedDate}</p>
                 
               </div>

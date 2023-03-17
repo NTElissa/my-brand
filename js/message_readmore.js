@@ -8,12 +8,17 @@ function AdminReadMoreMessage() {
   const messageMessage = document.querySelector('#message');
 
   fetch(`http://localhost:5000/api/v1/message`)
-    .then((resp) => resp.json())
-    .then((data) => {
-      messageId.innerHTML = data.data._id;
-      messageName.innerHTML = data.data.name;
-      messageEmail.innerHTML = data.data.email;
-      messageMessage.innerHTML = data.data.message;
-    })
-    .catch((error) => console.log(error));
-}
+  .then(resp => resp.json())
+    .then(template => {
+      messageId.innerHTML = template.data._id;
+      messageName.innerHTML = template.data.name;
+      messageEmail.innerHTML = template.data.email;
+      messageMessage.innerHTML = template.data.message;
+    });
+   
+    deleteMessage = async () => {
+  const response = await fetch(`http://localhost:5000/api/v1/message/${id}`, {
+    method: "DELETE",
+  });
+  window.location.href = "/admin_home.html"; // redirect to blogs page after deletion
+}}
