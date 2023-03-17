@@ -7,9 +7,9 @@ function AdminReadMoreMessage() {
   const messageEmail = document.querySelector('#email');
   const messageMessage = document.querySelector('#message');
 
-  fetch(`http://localhost:5000/api/v1/message`)
+  fetch(`http://localhost:5000/api/v1/message/${id}`)
   .then(resp => resp.json())
-    .then(template => {
+  .then(template => {
       messageId.innerHTML = template.data._id;
       messageName.innerHTML = template.data.name;
       messageEmail.innerHTML = template.data.email;
