@@ -139,11 +139,13 @@ justify-content: space-between;
 display: flex;
 justify-content: space-between;
 align-items: center;
-margin-left: 60px; 
+margin-left: 40px; 
+margin-right: 40px;
 }.all_blogs img{
 width: 260px;
 height: 150px;
 border-radius: 20px;
+padding: 10px 10px 10px 10px;
 }/* blogs  scroll */
 
 #all_blogs{

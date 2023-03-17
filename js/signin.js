@@ -19,7 +19,7 @@ async function userLogin(){
             if (data.message==="Logged in successfully") {
             
                 alert(data.message)
-                location.href="Admin_home.html" ; 
+                window.location.replace('admin_home.html');
             } else {
                 alert(data.message)
             }

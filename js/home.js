@@ -13,7 +13,7 @@ fetch("http://localhost:5000/api/v1/blogs")
   <div class="blog1">
   <img src="${post[i].image}">
  <p class="title_blog1">
- ${post[i].body.slice(0,40)}
+ ${post[i].body.slice(0,100)}
  </p>
  <a  href="/homeReadMore.html?id=${post[i]._id}" class="bolog_sign1" ><h1> >> </h1></a></div>
 

@@ -7,7 +7,7 @@ function adminHome() {
     .then((data) => {
       console.log(data.data);
       const post = data.data; 
-      for (let i = post.length - 1; i <= post.length ; i--) {
+      for (let i = post.length - 1; i >= 0 ; i--) {
         const date = new Date(post[i].createdAt); // get the post creation date
         const formattedDate = `${date.getHours()}:${date.getMinutes()} ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
         let posts = `

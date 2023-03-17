@@ -13,5 +13,6 @@ const form = document.querySelector('.form_contact');
         body:JSON.stringify(doc),
         headers:{ 'content-type' : 'application/json' }
     });
+    window.location.replace('index.html');
 }
 form.addEventListener('submit', createPost);

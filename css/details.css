@@ -4,7 +4,11 @@
 }body{
    margin-top: 60px;
    background-color: rgb(160, 207, 192);
-}.details{
+}.image img{
+    margin-left: 80px;
+  
+}
+.details{
     width: 60%; 
     background: #fff;
     border-radius: 10px;
@@ -41,11 +45,11 @@ box-shadow: none;
 width: 100%;
 padding: 0% 0% 0% 0%;
 margin:0px 0px 0px 0px;
-    }.image{
+    }.image img{
         margin-left: 40px;
-        width: 300px;
+        width: 500px;
     }.delete{
-        margin-left: -60px;
+        margin-left: -220px;
     }h1{
         padding: 0% 0% 0% 0%;
         margin:0px 0px 0px 0px; 
