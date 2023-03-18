@@ -1,40 +1,29 @@
-const container=document.querySelector('.publish_blog');
-const postbtn=document.querySelector('.btn_publish');
-const deletebtn=document.querySelector('.delete');
-const renderPosts = async () => {
-    let uri='http://localhost:3000/posts';
-    const res= await fetch(uri);
-    const posts= await res.json();
-   let template='';
-   posts.forEach(post => {
-    template +=  `
- <div class="table-page">
-        <table class="all_table" >
-            <tr class="tr1">
-        </tr>
-            <tr class="tr2">
-                <td class="no">${post.id}</td>
-                <td class="title_message">${post.title.slice(0,20)}</td><br>
-              
-                 <td class="body_content">${post.body.slice(120,200)}</td><br>
-                <td class="button_t">
-          <button class="btn_publish">Publish</button>                                     
-        </table></div>
-                       
-
-    `
-    
-   })
-   container.innerHTML = template;
-}
-
-
-postbtn.addEventListener('click',async (e) =>{
-    const res= await fetch('http://localhost:3000/posts/' +id,{
-   method: 'POST',
+function blogsRetrieve(){
+    const container=document.querySelector('.publish_blog');
+    fetch("http://localhost:5000/api/v1/blogs")
+    .then((res)=>{
+       return res.json();
     })
-    window.location.replace('index.html');
-   })
+    .then((data)=>{
+       console.log(data.data)
+        const post =data.data;
+        for (let i = post.length - 1; i >= post.length - 3; i--){
+          let posts = `
+          <div class="publish_blog">
 
-
-window.addEventListener('DOMContentLoaded',()=> renderPosts());
+          <img src="${post[i].image}">
+          <p class="title_blog1">
+          ${post[i].body}
+          </p>
+    </div>
+      
+     `
+    
+     
+    container.innerHTML += posts ;
+    
+        }
+    
+    })
+    .catch((error)=> alert(error));
+}
