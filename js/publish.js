@@ -1,6 +1,6 @@
 function blogsRetrieve(){
     const container=document.querySelector('.publish_blog');
-    fetch("http://localhost:5000/api/v1/blogs")
+    fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs")
     .then((res)=>{
        return res.json();
     })
@@ -15,15 +15,8 @@ function blogsRetrieve(){
           <p class="title_blog1">
           ${post[i].body}
           </p>
-    </div>
-      
-     `
-    
-     
+    </div> ` 
     container.innerHTML += posts ;
-    
-        }
-    
-    })
+    }})
     .catch((error)=> alert(error));
 }

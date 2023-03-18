@@ -12,7 +12,7 @@ formSignUp.addEventListener("submit", (event) => {
 
     const data = { firstname, lastname, email, password };
     //interacy with endpoint
-    fetch("http://localhost:5000/api/v1/signup", {
+    fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/signup", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

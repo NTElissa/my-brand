@@ -7,7 +7,7 @@ function AdminReadMore() {
   const blogBody = document.querySelector('#body');
   const edit =document.querySelector('.editbtn');
 
-  fetch(`http://localhost:5000/api/v1/blogs/${id}`)
+  fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs/${id}`)
     .then(resp => resp.json())
     .then(template => {
       blogTitle.innerHTML = template.data.title;
@@ -18,7 +18,7 @@ function AdminReadMore() {
     });
 
   deleteBlog = async () => {
-    const response = await fetch(`http://localhost:5000/api/v1/blogs/${id}`, {
+    const response = await fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs/${id}`, {
       method: "DELETE",
     });
     window.location.href = "/admin_home.html"; // redirect to blogs page after deletion

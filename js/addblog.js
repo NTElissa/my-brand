@@ -7,7 +7,7 @@ const form = document.querySelector('form');
         image:form.image.value,
      
     }
-    await fetch('http://localhost:5000/api/v1/blogs',{
+    await fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs',{
         method:'POST',
         body:JSON.stringify(doc),
         headers:{ 'content-type' : 'application/json' }

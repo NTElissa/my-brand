@@ -8,7 +8,7 @@ const form = document.querySelector('.form_contact');
         message:form.message.value,
      
     }
-    await fetch('http://localhost:5000/api/v1/message',{
+    await fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/message',{
         method:'POST',
         body:JSON.stringify(doc),
         headers:{ 'content-type' : 'application/json' }

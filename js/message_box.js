@@ -1,6 +1,6 @@
 function messageAdmin() {
   const container = document.querySelector('.message-page');
-  fetch('http://localhost:5000/api/v1/message')
+  fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/message')
     .then((res) => {
       return res.json();
     })

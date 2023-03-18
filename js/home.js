@@ -1,6 +1,6 @@
 function blogsRetrieve(){
 const container=document.querySelector('.all_blogs');
-fetch("http://localhost:5000/api/v1/blogs")
+fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs")
 .then((res)=>{
    return res.json();
 })

@@ -6,7 +6,7 @@ const blogImage=document.querySelector('#image')
 const blogBody=document.querySelector('#body')
 // const  renderDetails = async () => {
   
- fetch(`http://localhost:5000/api/v1/blogs/${id}`)
+ fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs/${id}`)
  
   .then(resp => resp.json())
   

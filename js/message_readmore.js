@@ -7,7 +7,7 @@ function AdminReadMoreMessage() {
   const messageEmail = document.querySelector('#email');
   const messageMessage = document.querySelector('#message');
 
-  fetch(`http://localhost:5000/api/v1/message/${id}`)
+  fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/message/${id}`)
   .then(resp => resp.json())
   .then(template => {
       messageId.innerHTML = template.data._id;
@@ -17,7 +17,7 @@ function AdminReadMoreMessage() {
     });
    
     deleteMessage = async () => {
-  const response = await fetch(`http://localhost:5000/api/v1/message/${id}`, {
+  const response = await fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/message/${id}`, {
     method: "DELETE",
   });
   window.location.href = "/admin_home.html"; // redirect to blogs page after deletion
