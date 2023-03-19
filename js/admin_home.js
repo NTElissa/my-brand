@@ -7,6 +7,8 @@ function adminHome() {
     .then((data) => {
       console.log(data.data);
       const post = data.data; 
+      document.getElementById('blog_count').innerHTML = post.length; // update blog count
+      document.getElementById('message_count').innerHTML = post.length;
       for (let i = post.length - 1; i >= 0 ; i--) {
         const date = new Date(post[i].createdAt); // get the post creation date
         const formattedDate = `${date.getHours()}:${date.getMinutes()} ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
