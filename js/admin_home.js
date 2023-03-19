@@ -2,9 +2,6 @@ function adminHome() {
   const container = document.querySelector('.table_data');
   fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs')
     .then((res) => {
-      if (!res.ok) {
-        throw new Error('Network response was not ok');
-      }
       return res.json();
     })
     .then((data) => {
@@ -28,8 +25,5 @@ function adminHome() {
         container.innerHTML += posts;
       }
     })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('An error occurred while fetching data.');
-    });
+    .catch((error) => alert(error));
 }
