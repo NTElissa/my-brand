@@ -15,7 +15,7 @@ fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs")
  <p class="title_blog1">
  ${post[i].body.slice(0,100)}
  </p>
- <a  href="/homeReadMore.html?id=${post[i]._id}" class="bolog_sign1" ><h1> >> </h1></a></div>
+ <a  href="/homeReadMore.html?id=${post[i]._id}" class="bolog_sign1" ><img src="images/right.png" class="image_readMore"></a></div>
 
 
     

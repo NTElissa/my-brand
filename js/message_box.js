@@ -7,7 +7,7 @@ function messageAdmin() {
     .then((data) => {
       console.log(data.data);
       const post = data.data;
-      if (post && post.length > 0) { // Check if the post array is not empty
+     if (post && post.length > 0) { // Check if the post array is not empty
         for (let i = post.length - 1; i >= 0; i--) { // Fix the loop condition
           const date = new Date(post[i].createdAt); // get the post creation date
           const formattedDate = `${date.getHours()}:${date.getMinutes()} ${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
