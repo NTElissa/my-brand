@@ -6,7 +6,7 @@ async function userLogin(){
     const data = {email: emailValue, password: passwordValue}
     // use fetch method to interact with your login api endpoint
 
-    await fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/login", {
+    await fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/login', {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -19,7 +19,7 @@ async function userLogin(){
             if (data.message==="Logged in successfully") {
             
                 alert(data.message)
-                window.location.replace("admin_home.html");
+                window.location.replace('admin_home.html');
             } else {
                 alert(data.message)
             }
