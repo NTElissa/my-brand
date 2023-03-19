@@ -1,6 +1,6 @@
 function adminHome() {
   const container = document.querySelector('.table_data');
-  fetch('https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs')
+  fetch("https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs")
     .then((res) => {
       return res.json();
     })
