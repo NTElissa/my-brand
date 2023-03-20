@@ -7,19 +7,43 @@
   
     <link rel = "icon" href = "images/tick-inside-circle.png" type = "image/x-icon">
     <style>
-      *{
+      .container{
 margin: 20px 80px 20px 40px;
+text-align: center;
 
+      }img{
+        padding: 20px 20px 20px 20px; 
+      }.back{
+     
+        margin-left: 100px;
+      }a{
+        text-decoration: none;
+        color: rgb(9, 103, 103);
+      
+      }a :hover{
+        color: blue;
+      }
+      @media screen and (max-width:1000px){
+  img{
+    width: 300px;
+    padding: 10px 10px 10px 10px;
+  }.container{
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
       }
       
     </style>
 </head>
 <body onload="readMore()">
+  
   <div class="container">
     <div id="title"></div>
     <div  class ="iamage" id="image"></div>
     <div id="body"></div>
-   
+   <a href="index.html" class="back">Home</a>
   </div>
     
     <script src="js/homeReadMore.js"></script>
