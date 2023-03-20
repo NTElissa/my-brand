@@ -10,7 +10,7 @@ function getUpdate() {
   const editBlogs = id.get('id');
   console.log(editBlogs);
 
-  fetch(`http://localhost:5000/api/v1/blogs/${editBlogs}`)
+  fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs/${editBlogs}`)
     .then(res => res.json())
     .then(template => {
       blogTitle.value = template.data.title;
@@ -37,7 +37,7 @@ async function updatePostNow() {
   };
 
   try {
-    const response = await fetch(`http://localhost:5000/api/v1/blogs/${editBlogs}`, {
+    const response = await fetch(`https://nice-red-chipmunk-tam.cyclic.app/api/v1/blogs/${editBlogs}`, {
       method: 'PUT',
       body: JSON.stringify(doc),
       headers: {
