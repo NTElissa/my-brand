@@ -1,5 +1,5 @@
 const form = document.querySelector('.form_contact');
- const createPost = async (e)=>{
+ const createMessage = async (e)=>{
     e.preventDefault();
     const doc={
         
@@ -15,4 +15,4 @@ const form = document.querySelector('.form_contact');
     });
     window.location.replace('index.html');
 }
-form.addEventListener('submit', createPost);
+form.addEventListener('submit', createMessage);
