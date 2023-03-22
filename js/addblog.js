@@ -14,5 +14,11 @@ const form = document.querySelector('form');
     });
    window.location.replace('admin_home.html');
   // alert("Blog sent to database")
+  //toas message 
+  Toastify({
+    text: "Your blogs has been added successfully",
+    backgroundColor: "green",
+    className: "toastify-success",
+  }).showToast();
 }
 form.addEventListener('submit', createPost);

@@ -2,12 +2,12 @@ body{
     background: #fff;
 }
 form {
-    width: 60%; 
+    width: 30%; 
     background: #fff;
     border-radius: 10px;
-    margin-left: 180px;
+    margin-left: 350px;
     margin-right: 10px;
-    padding: 60px 60px 200px 60px;
+    padding: 60px 60px 250px 60px;
     box-shadow: 0 5px 10px rgb(0,0,0,0.2);
 }.title_head{
     text-align: center;
@@ -91,7 +91,7 @@ label {
           border-radius: 5px;
           background-color: rgb(245, 241, 241);
         
-    }.submit{
+    }.submitbtn{
         color: #fff;
    font-size: 18px;
    outline: none;
@@ -102,7 +102,7 @@ label {
    cursor: pointer;
    transition: all 0.3s ease;
    display: flex;
-  margin-left: 500px;
+  margin-left: 230px;
     }a{
         text-decoration: none;
     }.Signup{
