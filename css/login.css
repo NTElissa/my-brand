@@ -103,7 +103,8 @@ label {
    cursor: pointer;
    transition: all 0.3s ease;
    display: flex;
-  margin-left: 230px;
+  margin-left: 200px;
+
     }a{
         text-decoration: none;
     }.Signup{
