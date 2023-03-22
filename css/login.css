@@ -144,7 +144,8 @@ label {
         display: flex;
         
       } input[type=email], input[type=password],input[type=text]{
-        width: 100%;
+        width: 200%;
+        margin-left: 100px;
       }.Signup{
         margin-top: 30px;
         margin-left: -20px;
