@@ -29,6 +29,7 @@ input[type=email], input[type=password],input[type=text] {
     background: #dee0e4;
     border-radius:5px;
     color:hsl(0, 0%, 100%);
+    font-size: 12px;
 }.log{
     width: 80px;
     height: 80px;
